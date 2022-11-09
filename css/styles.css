@@ -11,9 +11,6 @@
 
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --duration: 250ms;
-
-  --items: 3;
-  --indent: 30px;
 }
 body {
   font-family: var(--main-font);
@@ -68,7 +65,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--dark-text-color);
 }
-.header__logo .header__colortext {
+.header__colortext {
   color: var(--accent-text-color);
 }
 .header__nav {
@@ -81,7 +78,7 @@ img {
 .header__menu__item {
   position: relative;
 }
-.header__menu__item .link {
+.header__menu__link {
   display: block;
 
   padding-top: 32px;
@@ -97,11 +94,11 @@ img {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-.header__menu__item .link:hover,
-.header__menu__item .link:focus {
+.header__menu__link:hover,
+.header__menu__link:focus {
   color: var(--accent-text-color);
 }
-.header__menu__item .current::after {
+.header__menu__link--current::after {
   content: '';
 
   width: 100%;
@@ -114,7 +111,7 @@ img {
   background-color: var(--accent-text-color);
   border-radius: 2px;
 }
-.header__menu__item .current {
+.header__menu__link--current {
   color: var(--accent-text-color);
 }
 .header__contacts {
@@ -123,7 +120,7 @@ img {
 
   margin-left: auto;
 }
-.header__contacts__item .link {
+.header__contacts__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -139,8 +136,8 @@ img {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-.header__contacts__item .link:hover,
-.header__contacts__item .link:focus {
+.header__contacts__link:hover,
+.header__contacts__link:focus {
   color: var(--accent-text-color);
 }
 .header__contacts__icon {
@@ -440,7 +437,7 @@ img {
 .activity {
   padding-top: 0;
 }
-.activity-title {
+.activity__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -698,7 +695,7 @@ img {
 .footer__colortext {
   color: var(--accent-text-color);
 }
-.footer__logo .colortext__other {
+.footer__colortext__other {
   color: var(--secondary-text-color);
 }
 .footer__address {
@@ -715,7 +712,7 @@ img {
 .footer__contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer__contacts .link {
+.footer__contacts__link {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -725,8 +722,8 @@ img {
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
-.footer__contacts .link:hover,
-.footer__contacts .link:focus {
+.footer__contacts__link:hover,
+.footer__contacts__link:focus {
   color: var(--accent-text-color);
 }
 .footer__wrapper {
