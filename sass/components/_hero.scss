@@ -30,7 +30,7 @@
     margin-bottom: 30px;
 }
 
-.hero__button__open {
+.hero__button-open {
     display: block;
     margin: 0 auto;
     cursor: pointer;
@@ -52,7 +52,7 @@
     transition-timing-function: var(--timing-function);
 }
 
-.hero__button__open:hover,
-.hero__button__open:focus {
+.hero__button-open:hover,
+.hero__button-open:focus {
     background-color: #188ce8;
 }
